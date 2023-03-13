@@ -1,0 +1,14 @@
+{
+  "extends": ["./tsconfig.json"],
+  // "exclude": ["./*.ts"],
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Modules */
+    "module": "ESNext",                                /* Specify what module code is generated. */
+
+    /* Emit */
+    "outDir": "./es",                                   /* Specify an output folder for all emitted files. */
+
+  }
+}

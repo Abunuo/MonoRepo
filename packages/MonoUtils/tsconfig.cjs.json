@@ -1,0 +1,14 @@
+{
+  "extends": ["./tsconfig.json"],
+  // "exclude": ["./*.ts"],
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Modules */
+    "module": "CommonJS",                                /* Specify what module code is generated. */
+
+    /* Emit */
+    "outDir": "./lib",                                   /* Specify an output folder for all emitted files. */
+
+  }
+}

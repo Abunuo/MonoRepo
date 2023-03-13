@@ -1,0 +1,35 @@
+{
+  "extends": ["../../tsconfig.json"],
+  "include": [
+    "src/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/*.test.tsx",
+  ],
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true, 
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "build",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

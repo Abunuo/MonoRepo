@@ -1,0 +1,32 @@
+@import "@/assets/styles/functional.scss";
+@import "@/assets/styles/variable.scss";
+
+.main-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &-title {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 60px;
+    border-bottom: cBorder();
+    &-text {
+      flex: 1;
+    }
+    .toggle-user {
+      padding: 4px 8px;
+      margin: 0 20px;
+      border: cBorder();
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .user-name {
+      width: 120px;
+      color: $base-system-color;
+    }
+  }
+}

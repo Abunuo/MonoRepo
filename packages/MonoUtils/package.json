@@ -1,17 +1,27 @@
 {
   "name": "mono-utils",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dayjs": "^1.11.7"
-  }
+    "dayjs": "^1.11.7",
+    "minio": "^7.0.32",
+    "node": "^19.8.1"
+  },
+  "devDependencies": {
+    "@types/minio": "^7.0.17"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }

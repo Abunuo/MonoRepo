@@ -1,0 +1,26 @@
+{
+  "root": true,
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": "standard-with-typescript",
+	"overrides": [],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": 1,                               // 句末分号
+		"indent": ["warn", 2],                                      // 缩进
+		"quotes": 0,
+    "@typescript-eslint/quotes": [1, "single"],                 // 引号
+    "@typescript-eslint/no-unused-vars": 1,                     // no unused variables
+    "@typescript-eslint/explicit-function-return-type": 0,      // 校验是否函数显示声明返回类型
+    "@typescript-eslint/no-empty-interface": 0,                 // 校验空 interface 类型
+    "@typescript-eslint/strict-boolean-expressions": 0,         // 严格校验 boolean 类型
+    "@typescript-eslint/promise-function-async": 0,             // promise 是否需要显示声明
+    "@typescript-eslint/no-floating-promises": 0
+	}
+}

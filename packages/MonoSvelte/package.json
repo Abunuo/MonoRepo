@@ -1,0 +1,43 @@
+{
+  "name": "mono-svelte",
+  "version": "0.0.0",
+  "private": true,
+  "description": "mono svelte",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public -p 3003",
+    "check": "svelte-check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sirv-cli": "^2.0.0",
+    "svelte": "^3.55.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@tsconfig/svelte": "^4.0.1",
+    "rollup": "^3.15.0",
+    "rollup-plugin-css-only": "^4.3.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.1.2",
+    "svelte-check": "^3.0.0",
+    "svelte-preprocess": "^5.0.0",
+    "tslib": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abunuo/MonoRepo.git"
+  },
+  "author": "Abunuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abunuo/MonoRepo/issues"
+  },
+  "homepage": "https://github.com/Abunuo/MonoRepo#readme"
+}

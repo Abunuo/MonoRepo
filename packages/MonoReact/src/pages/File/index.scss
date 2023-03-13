@@ -1,0 +1,27 @@
+.file-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .upload-trigger-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    .trigger-btn {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      width: 40px;
+      border: 1px solid #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  .file-list-inner {
+    flex: 1;
+    overflow: overlay;
+  }
+}

@@ -1,0 +1,14 @@
+/*
+  全局 scss 函数
+ */
+
+/**
+ * @description: 生成统一 border
+ * @param {number} $width
+ * @param {color} $color
+ * @return {border}
+ * @example: border: cBorder();
+ */
+@function cBorder($width: 1, $color: $base-border-color) {
+  @return $width + px solid $color
+}

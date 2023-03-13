@@ -1,0 +1,6 @@
+{
+  "extends": ["../../.eslintrc", "plugin:react/jsx-runtime"],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  }
+}

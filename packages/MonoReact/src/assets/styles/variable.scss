@@ -1,0 +1,23 @@
+/*
+ * 全局 css 变量
+ * @example: background-color: $base-system-color;
+ */
+
+$base-system-color: #333;
+ 
+// color
+$base-color: $base-system-color;
+$base-color-sub: #666;
+$base-color-tip: #999;
+$base-color-notice: #bbb;
+
+$base-active-color: #3b8bf7;
+
+// border-color
+$base-border-color: #f2f2f2;
+$base-border-color-sub: #f9f9f9;
+$base-border-color-deep: #ddd;
+$base-border-color-dt: #e2e4e5;
+
+// font-size
+$base-font-size: 14px;

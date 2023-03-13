@@ -1,0 +1,20 @@
+/*
+ * @Date: 2021-09-07 15:18:40
+ * @Description: mixins
+ * @example: @include BackgrounBase(50%);
+ * @example: @include BackgrounBase;
+ */
+
+@mixin BackgrounBase($size: 100%, $position: center center, ) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin BackgrounImage($src: false) {
+  @if $src {
+    background-image: $src;
+  } @else {
+    @debug 'src is must required.'
+  }
+}
