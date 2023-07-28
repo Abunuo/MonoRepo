@@ -1,7 +1,6 @@
 /*
  * @Author: Monologue
  * @Date: 2023-03-08 11:05:01
- * @LastEditTime: 2023-05-16 12:06:01
  * @LastEditors: Monologue
  * @Description: 用户 store
  */
@@ -26,7 +25,7 @@ const UserContext = {
   async getUserInfo (token: string) {
     console.log('get user info', token)
     this.token = token
-    const newUserId = uuid()
+    const newUserId: string = uuid()
     const userInfo = await Promise.resolve({
       userId: newUserId,
       username: `test${newUserId}`,

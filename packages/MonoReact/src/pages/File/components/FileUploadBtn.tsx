@@ -4,19 +4,18 @@
  * @LastEditors: Monologue
  * @Description: file upload btn
  */
-import { FC } from 'react';
-import { FileItem } from '..';
+import { type FC } from 'react'
+import { type FileItem } from '../'
 
 interface FileUploadBtnProps {
-  addFile: (file: FileItem) => void;
+  addFile: (file: FileItem) => void
 }
 
 const FileUploadBtn: FC<FileUploadBtnProps> = (props) => {
-
   const uploadTriggerHandler = (e: React.MouseEvent<HTMLDivElement>) => {
-    const target = e.currentTarget;
-    const accept = target.dataset.acccept;
-    console.log(accept);
+    const target = e.currentTarget
+    const accept = target.dataset.acccept
+    console.log(accept)
   }
 
   return (
@@ -28,4 +27,4 @@ const FileUploadBtn: FC<FileUploadBtnProps> = (props) => {
   )
 }
 
-export default FileUploadBtn;
+export default FileUploadBtn

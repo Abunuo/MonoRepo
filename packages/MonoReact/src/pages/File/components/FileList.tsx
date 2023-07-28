@@ -4,20 +4,15 @@
  * @LastEditors: Monologue
  * @Description: file list
  */
-import { FC } from 'react';
-import { FileItem } from '..';
+import { type FC } from 'react'
+import { type FileItem } from '../'
 
 interface FileListProps {
-  fileList: FileItem[];
+  fileList: FileItem[]
 }
 
 const FileList: FC<FileListProps> = (props) => {
-  
-  return (
-    <div className="">
-      
-    </div>
-  )
+  return <div className=""></div>
 }
 
-export default FileList;
+export default FileList

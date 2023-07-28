@@ -1,7 +1,5 @@
-import type { PiniaPluginContext } from 'pinia'
+import type { PiniaPlugin, PiniaPluginContext } from 'pinia'
 
-
-export const SecretPiniaPlugin = (context: PiniaPluginContext) => {
-  // console.log(context);
+export const SecretPiniaPlugin: PiniaPlugin = (context: PiniaPluginContext) => {
   return { secret: 'the cake is a lie' }
 }

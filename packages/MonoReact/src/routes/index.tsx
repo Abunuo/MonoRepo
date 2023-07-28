@@ -1,7 +1,7 @@
 /*
  * @Author: Monologue
  * @Date: 2023-03-08 14:25:49
- * @LastEditTime: 2023-05-16 15:45:45
+ * @LastEditTime: 2023-07-31 14:50:23
  * @LastEditors: Monologue
  * @Description: routes
  */
@@ -12,6 +12,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const MainPage = lazy(() => import('@/pages/Main'))
 const AboutPage = lazy(() => import('@/pages/About'))
 const ErrorPage = lazy(() => import('@/pages/ErrorPage'))
+const FilePage = lazy(() => import('@/pages/File'))
 
 const Router = () => {
   return (
@@ -20,6 +21,7 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/file" element={<FilePage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>
