@@ -1,23 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.uploadFile2Minio = exports.listBuckets = exports.getUploadFile = void 0;
-const Minio = require("minio");
-let minioClient;
-const initMinio = () => {
-    minioClient = new Minio.Client({
-        endPoint: 'http://10.1.3.9',
-        port: 9000,
-        useSSL: false,
-        accessKey: 'jaYNgXPpbx9y9zMD',
-        secretKey: 'hWDkmgbZfxNr23rCag4XsBnwpVx6ooLP'
-    });
-};
+exports.getUploadFile = void 0;
 const getUploadFile = (inputId = "file-input", accept) => {
     return new Promise((resove, reject) => {
         const fileInput = document.getElementById(inputId) ?? document.createElement("input");
         fileInput.id = inputId;
         fileInput.type = "file";
         fileInput.accept = accept ?? "*";
+        fileInput.style.display = "none";
         document.body.append(fileInput);
         fileInput.onchange = (e) => {
             const file = e.target.files[0];
@@ -28,16 +18,3 @@ const getUploadFile = (inputId = "file-input", accept) => {
     });
 };
 exports.getUploadFile = getUploadFile;
-const listBuckets = () => {
-    if (!minioClient)
-        initMinio();
-    minioClient.listBuckets(function (err, buckets) {
-        if (err)
-            return console.log(err);
-        console.log('buckets :', buckets);
-    });
-};
-exports.listBuckets = listBuckets;
-const uploadFile2Minio = (file) => {
-};
-exports.uploadFile2Minio = uploadFile2Minio;

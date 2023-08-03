@@ -6,15 +6,20 @@
   overflow: hidden;
   .upload-trigger-inner {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    padding: 0 20px;
     height: 40px;
     border-bottom: 1px solid #ddd;
+    .left {
+      display: flex;
+      gap: 20px;
+    }
     .trigger-btn {
       display: flex;
       align-items: center;
+      padding: 0 10px;
       height: 32px;
-      width: 40px;
       border: 1px solid #f0f0f0;
       border-radius: 4px;
       cursor: pointer;

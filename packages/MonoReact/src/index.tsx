@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root') ?? document.bod
 
 root.render(
   // <React.StrictMode>
-    <StoreProvider>
-      <MainRouter />
-    </StoreProvider>
+  <StoreProvider>
+    <MainRouter />
+  </StoreProvider>
   // </React.StrictMode>
 )
 

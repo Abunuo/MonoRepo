@@ -1,6 +1,7 @@
 {
   "name": "mono-utils",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -9,15 +10,10 @@
     "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Abunuo",
   "license": "ISC",
   "dependencies": {
-    "dayjs": "^1.11.7",
-    "minio": "^7.0.32",
-    "node": "^19.8.1"
-  },
-  "devDependencies": {
-    "@types/minio": "^7.0.17"
+    "dayjs": "^1.11.7"
   },
   "browserslist": [
     ">0.2%",

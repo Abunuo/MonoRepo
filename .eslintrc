@@ -21,6 +21,7 @@
     "@typescript-eslint/no-empty-interface": 0,                 // 校验空 interface 类型
     "@typescript-eslint/strict-boolean-expressions": 0,         // 严格校验 boolean 类型
     "@typescript-eslint/promise-function-async": 0,             // promise 是否需要显示声明
-    "@typescript-eslint/no-floating-promises": 0
+    "@typescript-eslint/no-floating-promises": 0,
+    "@typescript-eslint/no-misused-promises": 0
 	}
 }

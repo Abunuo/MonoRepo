@@ -19,7 +19,7 @@ export interface FileItem {
 interface FilePageProps {}
 
 const FilePage: FC<FilePageProps> = (props) => {
-  const [uploadFile, setUploadFile] = useState<File>()
+  // const [uploadFile, setUploadFile] = useState<File>()
   const [fileList, setFileList] = useState<FileItem[]>([])
 
   const addFile = (file: FileItem) => { setFileList((files) => [...files, file]) }

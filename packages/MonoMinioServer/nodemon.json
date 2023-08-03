@@ -1,0 +1,12 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "watch": [".bin/*.js", ".bin/**/*.js"],
+  "ignore": [
+    "minio",
+    "node_modules",
+    "server"
+  ],
+  "delay": "1000",
+  "ext": "js ejs yml json"
+}

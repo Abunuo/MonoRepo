@@ -3,3 +3,5 @@ packages:
   - "packages/MonoVue"
   - "packages/MonoUtils"
   - "packages/MonoSvelte"
+  
+  - "packages/MonoMinioServer"

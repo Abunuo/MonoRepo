@@ -1,0 +1,30 @@
+{
+  "name": "mono-minio-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --watch",
+    "httpServer": "nodemon .bin/server.js",
+    "minioServer": "node .bin/minio-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Abunuo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "minio": "^7.1.1",
+    "mono-utils": "workspace:^",
+    "multer": "1.4.5-lts.1",
+    "node": "^20.5.0",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "ts-node": "^10.9.1"
+  }
+}

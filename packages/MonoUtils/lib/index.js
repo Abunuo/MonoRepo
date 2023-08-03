@@ -16,3 +16,4 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./common/common"), exports);
 __exportStar(require("./date/date"), exports);
+__exportStar(require("./file/file"), exports);

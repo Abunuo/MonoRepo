@@ -1,7 +1,7 @@
 <!--
  * @Author: Monologue
  * @Date: 2023-03-13 19:05:32
- * @LastEditTime: 2023-07-31 12:32:53
+ * @LastEditTime: 2023-08-01 11:25:28
  * @LastEditors: Monologue
  * @Description: mono 项目
 -->
@@ -23,7 +23,7 @@
 ```
 ###### 安装项目依赖，给多个包安装
 ```
-  pnpm add/remove xxx --filter <package_name> <package_name2>
+  pnpm add/remove xxx -r [--filter <package_name>]
 ```
 ###### 将 packageA 作为 packageB, packageC 的依赖进行安装：
 ```
