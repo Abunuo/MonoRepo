@@ -10,6 +10,9 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
+  "ignorePatterns": [
+    "*.html"
+  ],
 	"rules": {
     "semi": "off",
     "@typescript-eslint/semi": 1,                               // 句末分号

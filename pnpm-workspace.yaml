@@ -3,5 +3,6 @@ packages:
   - "packages/MonoVue"
   - "packages/MonoUtils"
   - "packages/MonoSvelte"
+  - "packages/MonoWebpack"
   
   - "packages/MonoMinioServer"

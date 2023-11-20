@@ -4,6 +4,7 @@
   "description": "一个包含了 react 基础项目，vue 基础项目，Svelte 基础项目及公共 Utils 函数库等的 monorepo 项目",
   "private": true,
   "scripts": {
+    "add": "pnpm add --filter",
     "start:react": "pnpm -C ./packages/MonoReact start",
     "start:vue": "pnpm -C ./packages/MonoVue start",
     "start:svelte": "pnpm -C ./packages/MonoSvelte dev",
