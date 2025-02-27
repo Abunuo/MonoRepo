@@ -1,0 +1,47 @@
+/*
+ * @Date: 2024-12-10 13:37:04
+ * @Description: element 定制样式
+ */
+
+.el-form.el-form--inline.custom-inline-form {
+	// 内联表格时表单宽度
+	.el-form-item {
+		width: 100%;
+		margin-right: 0;
+
+		// 默认100px 可通过 label-width 设置
+		.el-form-item__label {
+			width: 100px;
+		}
+
+		// 单行 同默认
+		&.xl-form-item {
+			width: 100%;
+		}
+
+		// 一行两个
+		&.l-form-item {
+			width: calc(50% - 10px);
+			& + .l-form-item {
+				margin-left: 20px;
+			}
+		}
+
+		// 一行三个
+		&.xs-form-item {
+			width: calc(33% - 12px);
+
+			& + .xs-form-item {
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+/**
+ * @description: 对 el-table 自定义 tooltip
+ * @eg: :show-overflow-tooltip="{popperClass: 'table-overflow-tooltip'}"
+ */
+.el-popper.table-overflow-tooltip {
+  max-width: 300px;
+}

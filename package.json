@@ -7,6 +7,7 @@
     "add": "pnpm add --filter",
     "start:react": "pnpm -C ./packages/MonoReact start",
     "start:vue": "pnpm -C ./packages/MonoVue start",
+    "start:vue3": "pnpm -C ./packages/Vue3-template dev",
     "start:svelte": "pnpm -C ./packages/MonoSvelte dev",
     "build:utils": "pnpm -C ./packages/MonoUtils build",
     "clean": "rm -rf node_modules ./packages/*/node_modules",

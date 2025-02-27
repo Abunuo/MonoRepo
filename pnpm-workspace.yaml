@@ -1,6 +1,7 @@
 packages:
   - "packages/MonoReact"
   - "packages/MonoVue"
+  - "packages/Vue3-template"
   - "packages/MonoUtils"
   - "packages/MonoSvelte"
   - "packages/MonoWebpack"

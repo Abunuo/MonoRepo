@@ -1,7 +1,6 @@
 /*
  * @Author: Monologue
  * @Date: 2023-03-08 11:05:01
- * @LastEditors: Monologue
  * @Description: 用户 store
  */
 import { runInAction } from 'mobx'
